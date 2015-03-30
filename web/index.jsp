@@ -12,7 +12,7 @@
   </head>
   <body>
 
-    O(∩_∩)O哈哈哈~ahahha
+    O(∩_∩)O哈哈哈~终于成功了
   </body>
 </html>
 <%--<jsp:forward page="user/login1.do"/>--%>
