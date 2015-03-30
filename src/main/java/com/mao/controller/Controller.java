@@ -6,4 +6,5 @@ package com.mao.controller;
 public class Controller {
     String id;
     String name;
+    String sex;
 }
