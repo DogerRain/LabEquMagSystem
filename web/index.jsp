@@ -16,4 +16,4 @@
   </body>
 </html>
 <%--<jsp:forward page="user/login1.do"/>--%>
-<jsp:forward page="LoginUser.jsp"/>
+<%--<jsp:forward page="LoginUser.jsp"/>--%>
