@@ -74,16 +74,27 @@
         <artifactId>c3p0</artifactId>
         <version>0.9.1.2</version>
     </dependency>
-   <!-- <dependency>
-        <groupId>commons-dbcp2</groupId>
+    <!--<dependency>
+        <groupId>org.apache.commons</groupId>
         <artifactId>commons-dbcp2</artifactId>
-        <version>2.0.1</version>
+        <version>2.1</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-pool2</artifactId>
+        <version>2.3</version>
+    </dependency>-->
+
+    <dependency>
+        <groupId>commons-dbcp</groupId>
+        <artifactId>commons-dbcp</artifactId>
+        <version>1.4</version>
     </dependency>
     <dependency>
         <groupId>commons-pool</groupId>
         <artifactId>commons-pool</artifactId>
         <version>1.4</version>
-    </dependency>-->
+    </dependency>
     <dependency>
         <groupId>org.mybatis</groupId>
         <artifactId>mybatis</artifactId>
