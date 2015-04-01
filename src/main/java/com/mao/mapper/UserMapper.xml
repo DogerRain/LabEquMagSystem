@@ -12,7 +12,8 @@
                 id, name,password
         </sql>
         <select id="login" parameterType="com.mao.pojo.User" resultMap="BaseResultMap1">
-                SELECT  * FROM  user WHERE  NAME =#{name,jdbcType=VARCHAR} and password=#{password,jdbcType=VARCHAR}
+                SELECT *
+                FROM  user WHERE  NAME =#{name,jdbcType=VARCHAR} and password=#{password,jdbcType=VARCHAR}
         </select>
 
 </mapper>
