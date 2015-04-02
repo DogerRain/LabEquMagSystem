@@ -83,8 +83,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <div class="block">
                 <p class="block-heading">登录信息平台</p>
                 <div class="block-body">
-                    <%--<form id="form1" action="<%=request.getContextPath() %>/user/login.do" method="post" onsubmit="return logins('click')">
-                   --%> <form>
+                    <form id="form1" action="<%=request.getContextPath() %>/user/login.do" method="post" onsubmit="return logins('click')">
+
                     <div id="email2" class=" control-group">
                         <label class="control-label">您的常用邮箱地址：</label>
                         <div class="controls">
