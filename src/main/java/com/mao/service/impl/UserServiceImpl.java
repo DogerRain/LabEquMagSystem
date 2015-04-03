@@ -15,16 +15,16 @@ import javax.annotation.Resource;
 @Service("userService")
 public class UserServiceImpl implements UserService {
 
-    @Autowired
+   @Resource
     private UserDao userDao;
 
     @Override
     public User login(User user) {
-        User user1=new User();
+       /* User user1=new User();
         System.out.println("1");
         user1=userDao.login(user);
         System.out.println("2");
-        System.out.println(user1.getId());
-        return user1;
+        System.out.println(user1.getId());*/
+        return userDao.login(user);
     }
 }
