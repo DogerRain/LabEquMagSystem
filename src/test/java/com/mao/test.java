@@ -1,8 +1,10 @@
 package com.mao;
 
+import com.alibaba.fastjson.JSON;
 import com.mao.pojo.User;
 import com.mao.service.UserService;
 import com.mao.service.impl.UserServiceImpl;
+import jdk.nashorn.internal.parser.JSONParser;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -17,7 +19,7 @@ import javax.annotation.Resource;
 public class test {
     private ApplicationContext ac=null;
 
-   //@Resource
+   @Resource
     private UserService userService=null;
 
     @Before
@@ -36,7 +38,8 @@ public class test {
         user.setPassword("123");
         System.out.println("12321");
         //System.getProperty("user.dir");
-        System.out.println(userService.login(user).getId());
+        System.out.println(JSON.toJSONString(userService.login(user)));
+
     }
 
 }
