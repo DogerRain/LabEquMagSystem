@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mao.dao.UserDao">
+        <resultMap id="BaseResultMap1" type="com.mao.pojo.User">
+                <id column="id" property="id" jdbcType="INTEGER"/>
+                <result column="name" property="name" jdbcType="VARCHER"/>
+                <result column="password" property="password" jdbcType="VARCHER"/>
+        </resultMap>
+        <sql id="Base_Column_List">
+                id, name,password
+        </sql>
+        <select id="login1" parameterType="com.mao.pojo.User" resultMap="BaseResultMap1">
+                SELECT *
+                FROM  user WHERE  NAME =#{name,jdbcType=VARCHAR} and password=#{password,jdbcType=VARCHAR}
+        </select>
+        <select id="login" parameterType="com.mao.pojo.User" resultMap="BaseResultMap1">
+                SELECT *
+                FROM  user WHERE  NAME =#name and password=#password
+        </select>
+
+</mapper>

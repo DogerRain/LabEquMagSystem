@@ -1,39 +1,51 @@
 package com.mao.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.mao.pojo.User;
 import com.mao.service.UserService;
-import org.springframework.web.bind.annotation.RequestMapping;
+
+
+
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * Created by ksdhc on 2015/3/30.
  */
 
-//@Controller
+@Controller
 @RequestMapping("/user")
-public class Controller {
+public class UserController {
 
     @Resource
-    private UserService userService;
+    private UserService userservice;
 
+    @RequestMapping("/login1")
     public String login1(User user,HttpServletRequest request){
 
         return "LoginUser";
+
+
     }
 
+    @RequestMapping("/login")
     public String login(User user,HttpServletRequest request){
+        System.out.println(JSON.toJSONString(userservice.login(user)));
+        if(userservice.login(user)!=null){
+            System.out.println("13214");
 
-        //System.out.println(JSON.toJSONString(user));
-        if(userService.login(user)!=null){
-
-          //  return "redirect:/getAll.do";
-            return "LoginUser";
+            return "index1";
 
         }
         else{
             return "LoginUser";
         }
+
+
     }
+
 }

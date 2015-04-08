@@ -20,11 +20,12 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User login(User user) {
-       /* User user1=new User();
-        System.out.println("1");
-        user1=userDao.login(user);
-        System.out.println("2");
-        System.out.println(user1.getId());*/
-        return userDao.login(user);
+    /* User user1=new User();
+     user1.setId(2);
+     user1.setName("mao1");
+     user1.setPassword("213312");
+*/
+       // return user1;
+     return userDao.login1(user);
     }
 }
