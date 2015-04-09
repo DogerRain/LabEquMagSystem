@@ -1,4 +1,4 @@
-package com.mao.service.impl;
+package com.mao.service;
 
 import com.mao.dao.UserDao;
 import com.mao.pojo.User;
@@ -26,6 +26,8 @@ public class UserServiceImpl implements UserService {
      user1.setPassword("213312");
 */
        // return user1;
-     return userDao.login1(user);
+     System.out.println("123");
+//     return userDao.login(user);
+     return userDao.userlogin(user);
     }
 }

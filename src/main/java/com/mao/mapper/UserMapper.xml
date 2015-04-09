@@ -15,5 +15,9 @@
                 SELECT *
                 FROM  user WHERE  NAME =#{name,jdbcType=VARCHAR} and password=#{password,jdbcType=VARCHAR}
         </select>
+        <select id="userlogin" parameterType="com.mao.pojo.User" resultMap="BaseResultMap1">
+                SELECT *
+                FROM  user WHERE  NAME =#{name,jdbcType=VARCHAR} and password=#{password,jdbcType=VARCHAR}
+        </select>
 
 </mapper>
