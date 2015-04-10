@@ -36,7 +36,7 @@ public class UserController {
     public String login(User user,HttpServletRequest request){
         System.out.println(JSON.toJSONString(userservice.login(user)));
         if(userservice.login(user)!=null){
-            System.out.println("13214");
+            System.out.println("success！！！");
 
             return "index1";
         }
