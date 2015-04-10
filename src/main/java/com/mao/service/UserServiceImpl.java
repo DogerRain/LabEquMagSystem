@@ -28,6 +28,6 @@ public class UserServiceImpl implements UserService {
        // return user1;
      System.out.println("123");
 //     return userDao.login(user);
-     return userDao.userlogin(user);
+     return userDao.login(user);
     }
 }

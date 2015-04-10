@@ -39,7 +39,6 @@ public class UserController {
             System.out.println("13214");
 
             return "index1";
-
         }
         else{
             return "LoginUser";

@@ -25,12 +25,10 @@ public class test {
 
         ac=new ClassPathXmlApplicationContext("spring-mybatis.xml");
        userService=(UserService)ac.getBean("userService");
-        //userService=new UserServiceImpl();
     }
 
     @Test
     public void test1(){
-
         User user=new User();
         user.setName("mao");
         user.setPassword("123");
